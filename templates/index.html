@@ -1,0 +1,23 @@
+<html >
+<head>
+  <title>Detection and prevention of phishing attacks</title>  
+</head>
+
+<body>
+ <div>
+	<h1>Input the url</h1>
+
+    <form action="{{ url_for('getprediction')}}"method="post">
+    	<input type="text" name="url" placeholder="url" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Get Prediction</button>
+    </form>
+
+   <br>
+   <br>
+   {{ output }}
+
+ </div>
+
+
+</body>
+</html>
